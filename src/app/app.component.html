@@ -1,0 +1,6 @@
+<h2 *ngIf="state$ | async as state">Count: {{state.count}}</h2>
+<button (click)="actions$.next(actionType.Add)">add</button>
+<button (click)="actions$.next(actionType.Subtract)">sub</button>
+<button (click)="actions$.next(actionType.Reset)">reset</button>
+<button (click)="actions$.next(actionType.Start)">start</button>
+<button (click)="actions$.next(actionType.Pause)">pause</button>
